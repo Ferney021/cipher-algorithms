@@ -2,10 +2,10 @@
 alphabet = 'ABCDEFGHIJKLMNÑOPQRSTUVWXYZ0123456789ÁÉÍÓÚÑ-/\*+()$@#="?¿!%><_^:.,; '
 
 # Define the key
-key = int(input("Enter the key length: "))
+# key = int(input("Enter the key length: "))
 
 
-def encrypt(message):
+def encrypt(message, key):
     message = message.upper()
     ciphertext = ""
     for char in message:
@@ -19,7 +19,7 @@ def encrypt(message):
     return ciphertext
 
 
-def decrypt(ciphertext):
+def decrypt(ciphertext, key):
     ciphertext = ciphertext.upper()
     plaintext = ""
     for char in ciphertext:
@@ -33,8 +33,8 @@ def decrypt(ciphertext):
     return plaintext
 
 
-message = input("Enter the message to encrypt: ")
-ciphertext = encrypt(message)
-print("The encrypted message is:", ciphertext)
-plaintext = decrypt(ciphertext)
-print("The decrypted message is:", plaintext)
+# message = input("Enter the message to encrypt: ")
+# ciphertext = encrypt(message)
+# print("The encrypted message is:", ciphertext)
+# plaintext = decrypt(ciphertext)
+# print("The decrypted message is:", plaintext)
